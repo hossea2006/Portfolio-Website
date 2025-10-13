@@ -1,0 +1,110 @@
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import './Projects.css';
+
+export interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+  imageUrl?: string;
+}
+
+interface ProjectsProps {
+  projects?: Project[];
+}
+
+const Projects = ({ projects }: ProjectsProps) => {
+  const defaultProjects: Project[] = [
+    {
+      title: 'Project 1',
+      description:
+        'A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and responsive design.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+      githubUrl: 'https://github.com',
+      liveUrl: 'https://example.com',
+      imageUrl: 'https://via.placeholder.com/400x250?text=Project+1',
+    },
+    {
+      title: 'Project 2',
+      description:
+        'An e-commerce platform with advanced filtering, shopping cart functionality, and secure payment integration using Stripe.',
+      technologies: ['TypeScript', 'Next.js', 'PostgreSQL', 'Stripe'],
+      githubUrl: 'https://github.com',
+      liveUrl: 'https://example.com',
+      imageUrl: 'https://via.placeholder.com/400x250?text=Project+2',
+    },
+    {
+      title: 'Project 3',
+      description:
+        'A mobile-responsive dashboard for data visualization and analytics. Includes interactive charts and real-time data updates.',
+      technologies: ['React', 'D3.js', 'AWS', 'Docker'],
+      githubUrl: 'https://github.com',
+      imageUrl: 'https://via.placeholder.com/400x250?text=Project+3',
+    },
+  ];
+
+  const displayProjects = projects || defaultProjects;
+
+  return (
+    <section id="projects" className="projects">
+      <div className="projects-container">
+        <h2 className="section-title">Featured Projects</h2>
+        <p className="section-subtitle">
+          Some of the projects I've worked on recently
+        </p>
+
+        <div className="projects-grid">
+          {displayProjects.map((project, index) => (
+            <div key={index} className="project-card">
+              <div className="project-image">
+                <img src={project.imageUrl} alt={project.title} />
+                <div className="project-overlay">
+                  <div className="project-links">
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        aria-label="View GitHub repository"
+                      >
+                        <FaGithub />
+                      </a>
+                    )}
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        aria-label="View live demo"
+                      >
+                        <FaExternalLinkAlt />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-content">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+
+                <div className="project-technologies">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
