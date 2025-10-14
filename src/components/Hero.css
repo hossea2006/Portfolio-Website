@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
@@ -89,6 +89,10 @@
 }
 
 @media (max-width: 968px) {
+  .hero {
+    padding-top: 8rem;
+  }
+
   .hero-container {
     flex-direction: column-reverse;
     text-align: center;
@@ -118,6 +122,10 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 7rem;
+  }
+
   .hero-name {
     font-size: 2rem;
   }

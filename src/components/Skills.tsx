@@ -4,11 +4,15 @@ import {
   FaDocker,
   FaAws,
   FaDatabase,
+  FaGitAlt,
 } from 'react-icons/fa';
 import {
   SiTypescript,
   SiSharp,
   SiDotnet,
+  SiMongodb,
+  SiRedis,
+  SiPostman,
 } from 'react-icons/si';
 import './Skills.css';
 
@@ -63,6 +67,26 @@ const Skills = ({ customSkills }: SkillsProps) => {
       name: 'SQL Server',
       icon: <FaDatabase />,
       color: '#CC2927',
+    },
+    {
+      name: 'MongoDB',
+      icon: <SiMongodb />,
+      color: '#47A248',
+    },
+    {
+      name: 'Redis',
+      icon: <SiRedis />,
+      color: '#DC382D',
+    },
+    {
+      name: 'Git',
+      icon: <FaGitAlt />,
+      color: '#F05032',
+    },
+    {
+      name: 'Postman',
+      icon: <SiPostman />,
+      color: '#FF6C37',
     },
   ];
 

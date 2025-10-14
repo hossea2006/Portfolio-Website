@@ -9,13 +9,13 @@ function App() {
   return (
     <div className="App">
       <Navbar
-        githubUrl="https://github.com/yourusername"
-        linkedinUrl="https://linkedin.com/in/yourusername"
+        githubUrl="https://github.com/hossea2006"
+        linkedinUrl="https://www.linkedin.com/in/ahossein2006/"
       />
       <Hero
-        name="Your Name"
+        name="Ashfaque Hossein"
         title="Software Developer"
-        description="I'm passionate about building scalable web applications and solving complex problems with clean, efficient code. I love working with modern technologies and continuously learning new skills to create innovative solutions."
+        description="I'm passionate about building scalable web and mobile applications and solving complex problems with clean, efficient code. I love working with modern technologies and continuously learning new skills to create innovative solutions."
         imageUrl="https://via.placeholder.com/400x400?text=Your+Photo"
       />
       <Skills />
