@@ -17,13 +17,13 @@ interface ProjectsProps {
 const Projects = ({ projects }: ProjectsProps) => {
   const defaultProjects: Project[] = [
     {
-      title: 'Project 1',
+      title: 'Probability Distribution Visualizer',
       description:
-        'A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and responsive design.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      imageUrl: 'https://via.placeholder.com/400x250?text=Project+1',
+        'An interactive web application for exploring and visualizing probability distributions. Features real-time parameter adjustment, multiple distribution types (Normal, Binomial, Poisson, Exponential), and both PDF and CDF visualizations with statistical calculations.',
+      technologies: ['React', 'TypeScript', 'Recharts', 'jStat'],
+      githubUrl: 'https://github.com/hossea2006/Probability-Distribution-Visualizer',
+      liveUrl: 'https://hossea2006.github.io/Probability-Distribution-Visualizer/',
+      imageUrl: '/assets/project1.png',
     },
     {
       title: 'Project 2',
