@@ -23,7 +23,7 @@ const Projects = ({ projects }: ProjectsProps) => {
       technologies: ['React', 'TypeScript', 'Recharts', 'jStat'],
       githubUrl: 'https://github.com/hossea2006/Probability-Distribution-Visualizer',
       liveUrl: 'https://hossea2006.github.io/Probability-Distribution-Visualizer/',
-      imageUrl: '/assets/project1.png',
+      imageUrl: 'assets/project1.png',
     },
     {
       title: 'Project 2',
