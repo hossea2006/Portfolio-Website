@@ -26,13 +26,12 @@ const Projects = ({ projects }: ProjectsProps) => {
       imageUrl: 'assets/project1.png',
     },
     {
-      title: 'Project 2',
+      title: 'AI Study Buddy',
       description:
-        'An e-commerce platform with advanced filtering, shopping cart functionality, and secure payment integration using Stripe.',
-      technologies: ['TypeScript', 'Next.js', 'PostgreSQL', 'Stripe'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      imageUrl: 'https://via.placeholder.com/400x250?text=Project+2',
+        'An AI-powered learning platform that helps students study more effectively through automated flashcard generation, quiz creation, concept explanations, and progress tracking with spaced repetition.',
+      technologies: ['React', 'TypeScript', 'Express.js', 'PostgreSQL', 'OpenAI API', 'Prisma'],
+      githubUrl: 'https://github.com/hossea2006/AI-Study-Buddy',
+      imageUrl: 'assets/project2.png',
     },
     {
       title: 'Project 3',
