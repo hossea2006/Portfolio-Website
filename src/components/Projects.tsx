@@ -23,7 +23,7 @@ const Projects = ({ projects }: ProjectsProps) => {
       technologies: ['React', 'TypeScript', 'Recharts', 'jStat'],
       githubUrl: 'https://github.com/hossea2006/Probability-Distribution-Visualizer',
       liveUrl: 'https://hossea2006.github.io/Probability-Distribution-Visualizer/',
-      imageUrl: 'assets/project1.png',
+      imageUrl: '/assets/project1.png',
     },
     {
       title: 'AI Study Buddy',
@@ -31,7 +31,7 @@ const Projects = ({ projects }: ProjectsProps) => {
         'An AI-powered learning platform that helps students study more effectively through automated flashcard generation, quiz creation, concept explanations, and progress tracking with spaced repetition.',
       technologies: ['React', 'TypeScript', 'Express.js', 'PostgreSQL', 'OpenAI API', 'Prisma'],
       githubUrl: 'https://github.com/hossea2006/AI-Study-Buddy',
-      imageUrl: 'assets/project2.png',
+      imageUrl: '/assets/project2.png',
     },
     {
       title: 'Project 3',
