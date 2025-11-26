@@ -16,7 +16,7 @@ function App() {
         name="Ashfaque Hossein"
         title="Software Developer"
         description="I'm passionate about building scalable web and mobile applications and solving complex problems with clean, efficient code. I love working with modern technologies and continuously learning new skills to create innovative solutions."
-        imageUrl="/assets/profile.png"
+        imageUrl={`${import.meta.env.BASE_URL}assets/profile.png`}
       />
       <Skills />
       <Projects />
